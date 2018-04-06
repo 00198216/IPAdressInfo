@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFEBEE"
+    tools:context="com.example.charl.ipadressinfo.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp">
+
+    <EditText
+        android:id="@+id/One"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="000"
+        android:textSize="25sp"
+        android:maxLength="3"
+        android:maxLines="1"
+        android:inputType="number"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/Two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:textSize="25sp"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/Three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:textSize="25sp"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/Four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="000"
+            android:textSize="25sp"
+            android:maxLength="3"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:textSize="25sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <EditText
+            android:id="@+id/Mask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="00"
+            android:textSize="25sp"
+            android:maxLength="2"
+            android:maxLines="1"
+            android:inputType="number"
+            />
+
+
+
+    </LinearLayout>
+
+ <LinearLayout
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="end">
+
+   <Button
+       android:id="@+id/Calc"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Calcular"
+       android:layout_marginTop="10dp"
+       android:layout_marginRight="30dp"
+       />
+
+ </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Net ID:"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/Clase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="#B71C1C"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Broadcast ID:"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            />
+
+        <TextView
+            android:id="@+id/Broadcast"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="#B71C1C"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
