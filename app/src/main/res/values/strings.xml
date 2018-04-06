@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">IP Adress Info</string>
+    <string name="cantidad">Cantidad:</string>
+    <string name="parte_de_host">Parte de Host:</string>
+    <string name="parte_de_red">Parte de Red:</string>
+    <string name="broadcast_id">Broadcast ID:</string>
 </resources>

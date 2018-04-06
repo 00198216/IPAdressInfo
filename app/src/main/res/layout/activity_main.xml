@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#FFEBEE"
+
     tools:context="com.example.charl.ipadressinfo.MainActivity">
 
 
@@ -122,7 +123,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_weight="1">
 
         <TextView
             android:layout_width="wrap_content"
@@ -131,7 +133,7 @@
             android:textSize="23sp"
             android:textColor="#000"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="20dp"
+            android:layout_weight="1"
             />
 
         <TextView
@@ -142,6 +144,7 @@
             android:textColor="#B71C1C"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
+            android:layout_weight="1"
             />
 
     </LinearLayout>
@@ -149,17 +152,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_weight="1"
         android:orientation="vertical"
         >
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Broadcast ID:"
+            android:text="@string/broadcast_id"
             android:textSize="23sp"
             android:textColor="#000"
             android:layout_marginLeft="15dp"
+            android:layout_weight="1"
             />
 
         <TextView
@@ -169,8 +173,105 @@
             android:textSize="23sp"
             android:textColor="#B71C1C"
             android:layout_gravity="center"
+            android:layout_weight="1"
             android:layout_marginTop="10dp"
             />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cantidad"
+            android:textSize="23sp"
+            android:textColor="#000"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            />
+
+        <TextView
+            android:id="@+id/Cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:textColor="#B71C1C"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/parte_de_red"
+                android:textColor="#000"
+                android:textSize="23sp"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/Part1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="#B71C1C"
+                android:textSize="23sp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/parte_de_host"
+            android:textColor="#000"
+            android:textSize="23sp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/Part2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textColor="#B71C1C"
+            android:textSize="23sp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
