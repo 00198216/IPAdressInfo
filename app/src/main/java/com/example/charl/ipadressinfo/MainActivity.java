@@ -1268,7 +1268,7 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
-                                //Cuando Mask es 24
+                                //Cuando Mask es 29
 
                                 if (NumM == 29) {
 
@@ -1309,6 +1309,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
+                                //Cuando Mask es 30
+
                                 if (NumM == 30) {
 
 
@@ -1348,6 +1350,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
+                                //Cuando Mask es 31
+
                                 if (NumM == 31) {
 
 
@@ -1386,6 +1390,8 @@ public class MainActivity extends AppCompatActivity {
                                     Red.setText(X6+"");
 
                                 }
+
+                                //Cuando Mask es 32
 
                                 if (NumM == 32) {
 
@@ -1436,6 +1442,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+
+    //Backup Check por si se logra insertar un valor no numerico
 
     private static boolean isNumeric(TextView A, TextView B, TextView C, TextView D, TextView Mask){
         try {
