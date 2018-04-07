@@ -84,6 +84,8 @@ public class MainActivity extends AppCompatActivity {
                     Num4 = Integer.parseInt(D.getText().toString());
 
 
+
+
                         if (Num1 <= 255 & Num2 <= 255 & Num3 <= 255 & Num4 <= 255) {
 
                             if (Num1 >= 0 & Num2 >= 0 & Num3 >= 0 & Num4 >= 0) {
@@ -118,6 +120,8 @@ public class MainActivity extends AppCompatActivity {
 
                                     Cantidad = findViewById(R.id.Cantidad);
                                     Cantidad.setText(cant+"");
+
+                                    //Host y Red tienen sus valores intercalados. Pero los valores van en la casilla correcta.
 
                                     Host = findViewById(R.id.Part1);
                                     Host.setText("-");
@@ -818,6 +822,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
+                                //Cuando Mask es 18
+
                                 if (NumM == 18) {
 
 
@@ -856,6 +862,8 @@ public class MainActivity extends AppCompatActivity {
                                     Red.setText(X6+""+"."+Comp5);
 
                                 }
+
+                                //Cuando Mask es 19
 
                                 if (NumM == 19) {
 
@@ -896,6 +904,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
+                                //Cuando Mask es 20
+
                                 if (NumM == 20) {
 
 
@@ -934,6 +944,8 @@ public class MainActivity extends AppCompatActivity {
                                     Red.setText(X6+""+"."+Comp5);
 
                                 }
+
+                                //Cuando Mask es 21
 
                                 if (NumM == 21) {
 
@@ -974,6 +986,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
+                                //Cuando Mask es 22
+
                                 if (NumM == 22) {
 
 
@@ -1012,6 +1026,8 @@ public class MainActivity extends AppCompatActivity {
                                     Red.setText(X6+""+"."+Comp5);
 
                                 }
+
+                                //Cuando Mask es 23
 
                                 if (NumM == 23) {
 
@@ -1088,6 +1104,8 @@ public class MainActivity extends AppCompatActivity {
                                     Red.setText(Comp5);
                                 }
 
+                                //Cuando Mask es 25
+
                                 if (NumM == 25) {
 
 
@@ -1126,6 +1144,8 @@ public class MainActivity extends AppCompatActivity {
                                     Red.setText(X6+"");
 
                                 }
+
+                                //Cuando Mask es 26
 
                                 if (NumM == 26) {
 
@@ -1166,6 +1186,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
+                                //Cuando Mask es 27
+
                                 if (NumM == 27) {
 
 
@@ -1205,6 +1227,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 }
 
+                                //Cuando Mask es 28
+
                                 if (NumM == 28) {
 
 
@@ -1243,6 +1267,8 @@ public class MainActivity extends AppCompatActivity {
                                     Red.setText(X6+"");
 
                                 }
+
+                                //Cuando Mask es 24
 
                                 if (NumM == 29) {
 
