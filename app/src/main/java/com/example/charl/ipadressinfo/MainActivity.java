@@ -6,6 +6,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -95,39 +96,8 @@ public class MainActivity extends AppCompatActivity {
 
                                 if (NumM == 0) {
 
+                                    Toast.makeText(getApplicationContext(),"Mascara invalida",Toast.LENGTH_SHORT).show();
 
-                                    X1 = Num1 & 0;
-                                    X2 = Num2 & 0;
-                                    X3 = Num3 & 0;
-                                    X4 = Num4 & 0;
-
-                                    ID = findViewById(R.id.Clase);
-                                    ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
-
-
-                                    X1 = Num1 | 255;
-                                    X2 = Num2 | 255;
-                                    X3 = Num3 | 255;
-                                    X4 = Num4 | 255;
-
-
-                                    BC = findViewById(R.id.Broadcast);
-                                    BC.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
-
-                                    ele= 32-NumM;
-                                    cant= (int) Math.pow(2,ele);
-                                    cant= cant-2;
-
-                                    Cantidad = findViewById(R.id.Cantidad);
-                                    Cantidad.setText(cant+"");
-
-                                    //Host y Red tienen sus valores intercalados. Pero los valores van en la casilla correcta.
-
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText("-");
-
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
                                 }
 
@@ -147,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
                                     ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
 
-                                    X1 = Num1 | 64;
+                                    X1 = Num1 | 127;
                                     X2 = Num2 | 255;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
@@ -166,11 +136,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num1 & 128;
                                     X6= Num1 & 127;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -188,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
                                     ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
 
-                                    X1 = Num1 | 32;
+                                    X1 = Num1 | 63;
                                     X2 = Num2 | 255;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
@@ -207,11 +177,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num1 & 192;
                                     X6= Num1 & 63;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -229,7 +199,7 @@ public class MainActivity extends AppCompatActivity {
                                     ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
 
-                                    X1 = Num1 | 16;
+                                    X1 = Num1 | 31;
                                     X2 = Num2 | 255;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
@@ -248,11 +218,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num1 & 224;
                                     X6= Num1 & 31;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -270,7 +240,7 @@ public class MainActivity extends AppCompatActivity {
                                     ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
 
-                                    X1 = Num1 | 8;
+                                    X1 = Num1 | 15;
                                     X2 = Num2 | 255;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
@@ -289,11 +259,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num1 & 240;
                                     X6= Num1 & 15;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -311,7 +281,7 @@ public class MainActivity extends AppCompatActivity {
                                     ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
 
-                                    X1 = Num1 | 4;
+                                    X1 = Num1 | 7;
                                     X2 = Num2 | 255;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
@@ -330,11 +300,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num1 & 248;
                                     X6= Num1 & 7;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -352,7 +322,7 @@ public class MainActivity extends AppCompatActivity {
                                     ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
 
-                                    X1 = Num1 | 2;
+                                    X1 = Num1 | 3;
                                     X2 = Num2 | 255;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
@@ -371,11 +341,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num1 & 252;
                                     X6= Num1 & 3;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -412,11 +382,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num1 & 254;
                                     X6= Num1 & 1;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -450,11 +420,11 @@ public class MainActivity extends AppCompatActivity {
                                     Cantidad = findViewById(R.id.Cantidad);
                                     Cantidad.setText(cant+"");
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2);
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2);
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(Comp3+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(Comp3+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -473,7 +443,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                                     X1 = Num1 | 0;
-                                    X2 = Num2 | 64;
+                                    X2 = Num2 | 127;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
 
@@ -491,11 +461,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num2 & 128;
                                     X6= Num2 & 127;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -514,7 +484,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                                     X1 = Num1 | 0;
-                                    X2 = Num2 | 32;
+                                    X2 = Num2 | 63;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
 
@@ -532,11 +502,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num2 & 192;
                                     X6= Num2 & 63;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -555,7 +525,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                                     X1 = Num1 | 0;
-                                    X2 = Num2 | 16;
+                                    X2 = Num2 | 31;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
 
@@ -573,11 +543,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num2 & 224;
                                     X6= Num2 & 31;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -596,7 +566,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                                     X1 = Num1 | 0;
-                                    X2 = Num2 | 8;
+                                    X2 = Num2 | 15;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
 
@@ -614,11 +584,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num2 & 240;
                                     X6= Num2 & 15;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -637,7 +607,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                                     X1 = Num1 | 0;
-                                    X2 = Num2 | 4;
+                                    X2 = Num2 | 7;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
 
@@ -655,11 +625,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num2 & 248;
                                     X6= Num2 & 7;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -678,7 +648,7 @@ public class MainActivity extends AppCompatActivity {
 
 
                                     X1 = Num1 | 0;
-                                    X2 = Num2 | 2;
+                                    X2 = Num2 | 3;
                                     X3 = Num3 | 255;
                                     X4 = Num4 | 255;
 
@@ -696,11 +666,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num2 & 252;
                                     X6= Num2 & 3;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -737,11 +707,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num2 & 254;
                                     X6= Num2 & 1;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp4+"."+Comp5);
 
                                 }
 
@@ -774,11 +744,11 @@ public class MainActivity extends AppCompatActivity {
                                     Cantidad = findViewById(R.id.Cantidad);
                                     Cantidad.setText(cant+"");
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3);
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3);
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(Comp4+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(Comp4+"."+Comp5);
                                 }
 
                                 //Cuando Mask es 17
@@ -797,7 +767,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
-                                    X3 = Num3 | 64;
+                                    X3 = Num3 | 127;
                                     X4 = Num4 | 255;
 
 
@@ -814,11 +784,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num3 & 128;
                                     X6= Num3 & 127;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp5);
 
                                 }
 
@@ -829,7 +799,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     X1 = Num1 & 255;
                                     X2 = Num2 & 255;
-                                    X3 = Num3 & 192;
+                                    X3 = Num3 & 63;
                                     X4 = Num4 & 0;
 
                                     ID = findViewById(R.id.Clase);
@@ -838,7 +808,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
-                                    X3 = Num3 | 32;
+                                    X3 = Num3 | 63;
                                     X4 = Num4 | 255;
 
 
@@ -855,11 +825,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num3 & 192;
                                     X6= Num3 & 63;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp5);
 
                                 }
 
@@ -879,7 +849,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
-                                    X3 = Num3 | 16;
+                                    X3 = Num3 | 31;
                                     X4 = Num4 | 255;
 
 
@@ -896,11 +866,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num3 & 224;
                                     X6= Num3 & 31;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp5);
 
                                 }
 
@@ -920,7 +890,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
-                                    X3 = Num3 | 8;
+                                    X3 = Num3 | 15;
                                     X4 = Num4 | 255;
 
 
@@ -937,11 +907,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num3 & 240;
                                     X6= Num3 & 15;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp5);
 
                                 }
 
@@ -961,7 +931,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
-                                    X3 = Num3 | 4;
+                                    X3 = Num3 | 7;
                                     X4 = Num4 | 255;
 
 
@@ -978,11 +948,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num3 & 248;
                                     X6= Num3 & 7;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp5);
 
                                 }
 
@@ -1002,7 +972,7 @@ public class MainActivity extends AppCompatActivity {
 
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
-                                    X3 = Num3 | 2;
+                                    X3 = Num3 | 3;
                                     X4 = Num4 | 255;
 
 
@@ -1019,11 +989,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num3 & 252;
                                     X6= Num3 & 3;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp5);
 
                                 }
 
@@ -1060,11 +1030,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num3 & 254;
                                     X6= Num3 & 1;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+""+"."+Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+""+"."+Comp5);
 
                                 }
 
@@ -1097,11 +1067,11 @@ public class MainActivity extends AppCompatActivity {
                                     Cantidad = findViewById(R.id.Cantidad);
                                     Cantidad.setText(cant+"");
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4);
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4);
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(Comp5);
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(Comp5);
                                 }
 
                                 //Cuando Mask es 25
@@ -1121,7 +1091,7 @@ public class MainActivity extends AppCompatActivity {
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
                                     X3 = Num3 | 0;
-                                    X4 = Num4 | 64;
+                                    X4 = Num4 | 127;
 
 
                                     BC = findViewById(R.id.Broadcast);
@@ -1137,11 +1107,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num4 & 128;
                                     X6= Num4 & 127;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+"");
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+"");
 
                                 }
 
@@ -1162,7 +1132,7 @@ public class MainActivity extends AppCompatActivity {
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
                                     X3 = Num3 | 0;
-                                    X4 = Num4 | 32;
+                                    X4 = Num4 | 63;
 
 
                                     BC = findViewById(R.id.Broadcast);
@@ -1178,11 +1148,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num4 & 192;
                                     X6= Num4 & 63;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+"");
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+"");
 
                                 }
 
@@ -1203,7 +1173,7 @@ public class MainActivity extends AppCompatActivity {
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
                                     X3 = Num3 | 0;
-                                    X4 = Num4 | 16;
+                                    X4 = Num4 | 31;
 
 
                                     BC = findViewById(R.id.Broadcast);
@@ -1219,11 +1189,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num4 & 224;
                                     X6= Num4 & 31;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+"");
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+"");
 
                                 }
 
@@ -1244,7 +1214,7 @@ public class MainActivity extends AppCompatActivity {
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
                                     X3 = Num3 | 0;
-                                    X4 = Num4 | 8;
+                                    X4 = Num4 | 15;
 
 
                                     BC = findViewById(R.id.Broadcast);
@@ -1260,11 +1230,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num4 & 240;
                                     X6= Num4 & 15;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+"");
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+"");
 
                                 }
 
@@ -1285,7 +1255,7 @@ public class MainActivity extends AppCompatActivity {
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
                                     X3 = Num3 | 0;
-                                    X4 = Num4 | 4;
+                                    X4 = Num4 | 7;
 
 
                                     BC = findViewById(R.id.Broadcast);
@@ -1301,11 +1271,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num4 & 248;
                                     X6= Num4 & 7;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+"");
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+"");
 
                                 }
 
@@ -1326,7 +1296,7 @@ public class MainActivity extends AppCompatActivity {
                                     X1 = Num1 | 0;
                                     X2 = Num2 | 0;
                                     X3 = Num3 | 0;
-                                    X4 = Num4 | 2;
+                                    X4 = Num4 | 3;
 
 
                                     BC = findViewById(R.id.Broadcast);
@@ -1342,11 +1312,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num4 & 252;
                                     X6= Num4 & 3;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+"");
+                                    Host= findViewById(R.id.Part2);
+                                    Host.setText(X6+"");
 
                                 }
 
@@ -1383,11 +1353,11 @@ public class MainActivity extends AppCompatActivity {
                                     X5= Num4 & 254;
                                     X6= Num4 & 1;
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(Comp2+"."+Comp3+"."+Comp4+"."+X5+"");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText(X6+"");
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText(X6+"");
 
                                 }
 
@@ -1401,8 +1371,10 @@ public class MainActivity extends AppCompatActivity {
                                     X3 = Num3 & 255;
                                     X4 = Num4 & 255;
 
+                                    //No hay ip disponible para  Net Id
+
                                     ID = findViewById(R.id.Clase);
-                                    ID.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
+                                    ID.setText("-");
 
 
                                     X1 = Num1 | 0;
@@ -1410,9 +1382,11 @@ public class MainActivity extends AppCompatActivity {
                                     X3 = Num3 | 0;
                                     X4 = Num4 | 0;
 
+                                    //No hay ips disponibles para Broadcast id
+
 
                                     BC = findViewById(R.id.Broadcast);
-                                    BC.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
+                                    BC.setText("-");
 
                                     ele= 32-NumM;
                                     cant= (int) Math.pow(2,ele);
@@ -1421,11 +1395,11 @@ public class MainActivity extends AppCompatActivity {
                                     Cantidad = findViewById(R.id.Cantidad);
                                     Cantidad.setText(cant+"");
 
-                                    Host = findViewById(R.id.Part1);
-                                    Host.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
+                                    Red = findViewById(R.id.Part1);
+                                    Red.setText(X1 + "" + "." + X2 + "" + "." + X3 + "" + "." + X4 + "");
 
-                                    Red = findViewById(R.id.Part2);
-                                    Red.setText("-");
+                                    Host = findViewById(R.id.Part2);
+                                    Host.setText("-");
 
                                 }
 
